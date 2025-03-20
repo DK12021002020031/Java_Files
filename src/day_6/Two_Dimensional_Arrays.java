@@ -1,6 +1,7 @@
 package day_6;
 
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class Two_Dimensional_Arrays {
 
@@ -35,6 +36,18 @@ public class Two_Dimensional_Arrays {
 
 			System.out.println();
 		}
+		
+		for (int row[] : arr) {
+			
+			for(int val: row) {
+				
+				System.out.print(val+ " ");
+			}
+			
+			System.out.println();
+		}
+		
+		System.out.println(Arrays.deepToString(arr)); // to print the array without the for loops
 	}
 
 }
