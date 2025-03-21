@@ -15,16 +15,27 @@ public class Student {
 
 	}
 
+//	Student(int w, String x, String y, double z) {
+//
+//		id=w;
+//		
+//		name=x;
+//		
+//		collegeName=y;
+//		
+//		marks=z;
+//	}
+	
 	Student(int id, String name, String collegeName, double marks) {
-
-		this.id = id;
-
-		this.name = name;
-
-		this.collegeName = collegeName;
-
-		this.marks = marks;
-	}
+		
+				this.id=id;
+				
+				this.name=name;
+				
+				this.collegeName=collegeName;
+				
+				this.marks=marks;
+			}
 
 	public void study() {
 
