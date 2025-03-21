@@ -3,7 +3,9 @@ package day_7;
 public class StudentDriver {
 
 	public static void main(String[] args) {
-
+		
+        // Non-Parameterized Constructor
+		
 		Student s1 = new Student();
 
 		s1.name = "Abhishek";
@@ -18,19 +20,14 @@ public class StudentDriver {
 
 		s1.study();
 		
+		
 		System.out.println();
+		
+		// Parameterized Constructor
+		
+		Student s2 = new Student(1,"Rahul","Jadavpur University",97.2);
 
-		Student s2 = new Student();
-
-		s2.name = "Govind";
-
-		s2.collegeName = "IIT Kharagpur";
-
-		s2.id = 4;
-
-		s2.marks = 98.6;
-
-		if(s2.name!=null) System.out.println(s2.id + ". " + s2.name + " studies in " + s2.collegeName + "has scored " + s2.marks+" marks");
+		if(s2.name!=null) System.out.println(s2.id + ". " + s2.name + " studies in " + s2.collegeName + " has scored " + s2.marks+" marks");
 
 		s2.study();
 
