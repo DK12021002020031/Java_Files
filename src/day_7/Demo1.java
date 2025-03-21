@@ -17,6 +17,8 @@ public class Demo1 {
 		
 		Demo1 a=new Demo1();
 		
+		System.out.println(a);
+		
         System.out.println(id);
 		
 		System.out.println(a.name);
