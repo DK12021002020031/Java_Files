@@ -48,6 +48,7 @@ public class Two_Dimensional_Arrays {
 		}
 		
 		System.out.println(Arrays.deepToString(arr)); // to print the array without the for loops using Arrays util package
+
 	}
 
 }
