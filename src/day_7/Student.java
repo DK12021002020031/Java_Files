@@ -8,8 +8,7 @@ public class Student {
 
 	String name, collegeName;
 
-	// Constructor Overloading is possible because it is a specialized non-static
-	// method and a method can be overloaded.
+	// Constructor Overloading is possible because it is a specialized non-static method and a method can be overloaded.
 
 	Student() {
 

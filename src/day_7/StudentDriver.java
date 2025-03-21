@@ -22,7 +22,7 @@ public class StudentDriver {
 		
 		
 		System.out.println();
-		
+			
 		// Parameterized Constructor
 		
 		Student s2 = new Student(1,"Rahul","Jadavpur University",97.2);
