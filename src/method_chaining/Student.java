@@ -11,10 +11,19 @@ public class Student {
 
 		return this; // Contains the address of currently existing object
 	}
+	
+	public Student setId(int id) {
+		
+		this.id=id;
+		
+		return this; // Contains the address of currently existing object
+	}
 
-	public void display() {
+	public Student display() {
 
-		System.out.println(this.name + " " + this.id);
+		System.out.println("Student ID: "+this.id + "\nStudent Name: " + this.name);
+		
+		return this;
 	}
 
 }
