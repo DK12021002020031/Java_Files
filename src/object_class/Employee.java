@@ -41,4 +41,8 @@ public class Employee {
 //		
 //		return 1;  // Worst way to override a hash function where it returns the same hash code for every object
 //	}
+	
+//	public Employee cloneEmployee(Object o) {
+//		
+//	}
 }

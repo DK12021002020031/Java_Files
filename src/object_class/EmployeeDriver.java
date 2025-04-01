@@ -32,6 +32,15 @@ public class EmployeeDriver {
 		
 		System.out.println(e2.hashCode());
 		
+		Employee e=new Employee(3,"Farhan",3000);
+		
+//		Object o=e.clone(); // Return type of "clone()" is object
+		
+		Employee e3=e.cloneEmployee(e));
+		
+		System.out.println(e);
+		System.out.println(e3);
+		
 	}
 
 }
