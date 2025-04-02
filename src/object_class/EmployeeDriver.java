@@ -36,10 +36,10 @@ public class EmployeeDriver {
 		
 //		Object o=e.clone(); // Return type of "clone()" is object
 		
-		Employee e3=e.cloneEmployee(e));
+//		Employee e3=e.cloneEmployee(e));
 		
 		System.out.println(e);
-		System.out.println(e3);
+//		System.out.println(e3);
 		
 	}
 
