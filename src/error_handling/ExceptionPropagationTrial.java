@@ -47,5 +47,7 @@ public class ExceptionPropagationTrial {
 			
 			System.out.println("Exception handled!");
 		}
+		
+		sc.close();
 	}
 }
