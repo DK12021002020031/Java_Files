@@ -1,4 +1,4 @@
-package error_handling;
+package exception_handling;
 
 public class InitializingErrorDemo {
 	
