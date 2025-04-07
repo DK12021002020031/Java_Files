@@ -45,7 +45,7 @@ public class Dog implements Comparable {
 		
 		compareDogByBreed c=new compareDogByBreed();
 		
-		Arrays.sort(arr,c); // Sort method 
+		Arrays.sort(arr,c);  
 		
 		for(Dog d : arr) {
 			

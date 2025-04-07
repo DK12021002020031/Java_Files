@@ -1,0 +1,68 @@
+package singly_linked_list;
+
+public class SinglyLinkedList {
+
+	Node head, tail;
+
+	static int count;
+
+	public void insert(int data) {
+
+		Node newNode = new Node(data);
+
+		if (this.head == null) {
+
+			this.head = newNode;
+			this.tail = newNode;
+		} else {
+
+			this.tail.next = newNode;
+
+			this.tail = newNode;
+		}
+
+		count++;
+	}
+
+	public void displayList() {
+
+		Node ptr = this.head;
+
+		if (ptr == null) {
+			System.err.println("List is empty!");
+			return;
+		}
+
+		while (ptr != null) {
+
+			System.out.print(ptr.data + " -> ");
+			ptr = ptr.next;
+		}
+
+		System.out.println("null");
+
+		System.out.println();
+	}
+
+	public void updateAtIndex(int index, int newData) {
+
+		int currIndex = 1;
+
+		Node ptr = this.head;
+
+		if (ptr == null) {
+			System.err.println("List is empty!");
+			return;
+		}
+
+		while (ptr != null && currIndex != index) {
+
+			ptr = ptr.next;
+
+			currIndex++;
+		}
+
+		ptr.data = newData;
+	}
+
+}
