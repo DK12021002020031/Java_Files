@@ -6,28 +6,27 @@ public class Driver {
 
 	public static void main(String[] args) {
 
-		Scanner sc = new Scanner(System.in);
-
 		SinglyLinkedList list = new SinglyLinkedList();
 
 		boolean flag = true;
 
 		while (flag) {
 
-			System.out.println("Enter 1 to insert the data \n "
-					+ "Enter 2 to display the list \n "
-					+ "Enter 3 to update the list at a position\n "
+			System.out.println("Enter 1 to insert the data \n"
+					+ "Enter 2 to display the list \n"
+					+ "Enter 3 to update the list at a position\n"
 					+ "Enter 4 to insert at a position \n"
-					+ "Enter 5 to exit");
+					+ "Enter 5 to delete at a position \n"
+					+ "Enter 6 to exit");
 			
-			int n = sc.nextInt();
+			int n = list.sc.nextInt();
 
 			switch (n) {
 
 			case 1: {
 				System.out.println("Enter the data : ");
 
-				int val = sc.nextInt();
+				int val = list.sc.nextInt();
 
 				list.insert(val);
 
@@ -40,43 +39,39 @@ public class Driver {
 			}
 			case 3: {
 				System.out.println("Please input the index to be updated: ");
-				int index = sc.nextInt();
-
-				if (index <1 || index > SinglyLinkedList.count) {
-					System.out.println("Out of Bounds! Enter the index between 1 and " + SinglyLinkedList.count);
-					break;
-				}
+				int index = list.sc.nextInt();
 
 				System.out.println("Please input the new data: ");
-				int newData = sc.nextInt();
+				int newData = list.sc.nextInt();
 
 				list.updateAtIndex(index, newData);
 				break;
 			}
 			case 4: {
-				System.out.println("Please input the index to inert: ");
-				int index = sc.nextInt();
-
-				if (index <1 || index > SinglyLinkedList.count) {
-					System.out.println("Out of Bounds! Enter the index between 1 and " + SinglyLinkedList.count);
-					break;
-				}
+				System.out.println("Please input the index to insert: ");
+				int index = list.sc.nextInt();
 
 				System.out.println("Please input the data of new node: ");
-				int newData = sc.nextInt();
+				int newData = list.sc.nextInt();
 
 				list.insertAtIndex(index, newData);
 				break;
-				
 			}
 			case 5: {
+				System.out.println("Please input the index to delete: ");
+				int index = list.sc.nextInt();
+				
+				list.deleteAtIndex(index);
+				break;
+			}
+			case 6: {
 
 				flag = false;
 				break;
 
 			}
 			default:
-				System.out.println("Invalid Input!");
+				System.err.println("Invalid Input!");
 				break;
 			}
 		}
