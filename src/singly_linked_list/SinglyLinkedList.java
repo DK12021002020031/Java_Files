@@ -64,5 +64,24 @@ public class SinglyLinkedList {
 
 		ptr.data = newData;
 	}
-
+	
+	public void insertAtIndex(int index,int newData) {
+		
+		Node newNode=new Node(newData);
+		
+		Node ptr=this.head;
+		
+		int currIndex=1;
+		
+		while(ptr!=null && currIndex<index-1) {
+			
+			ptr=ptr.next;
+			
+			currIndex++;
+		}	
+		
+		newNode.next=ptr.next;
+		
+		ptr.next=newNode;
+	}
 }
