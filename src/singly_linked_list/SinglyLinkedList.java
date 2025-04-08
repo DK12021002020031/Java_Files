@@ -141,7 +141,7 @@ public class SinglyLinkedList {
 			
 			ptr=ptr.next;
 			
-	        head=null;  head=ptr;
+			head=ptr;
 	        
 			return;
 		}
